@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8ECF731E7144E900445244 /* gazeapi_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECF6E1E7144E900445244 /* gazeapi_parser.cpp */; };
+		CA8ECF741E7144E900445244 /* gazeapi_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECF701E7144E900445244 /* gazeapi_socket.cpp */; };
+		CA8ECF751E7144E900445244 /* gazeapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA8ECF721E7144E900445244 /* gazeapi.cpp */; };
+		CA8ECF781E71458F00445244 /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8ECF761E71458F00445244 /* libboost_system-mt.dylib */; };
+		CA8ECF791E71458F00445244 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8ECF771E71458F00445244 /* libboost_thread-mt.dylib */; };
+		CAAB016F1D61EFCB00F431A5 /* PracticalSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAAB016C1D61EFCB00F431A5 /* PracticalSocket.cpp */; };
+		CAAB01891D61F16800F431A5 /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01781D61F16800F431A5 /* libopencv_videostab.3.1.0.dylib */; };
+		CAAB018A1D61F16800F431A5 /* libopencv_stitching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01791D61F16800F431A5 /* libopencv_stitching.3.1.0.dylib */; };
+		CAAB018B1D61F16800F431A5 /* libopencv_calib3d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017A1D61F16800F431A5 /* libopencv_calib3d.3.1.0.dylib */; };
+		CAAB018C1D61F16800F431A5 /* libopencv_features2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017B1D61F16800F431A5 /* libopencv_features2d.3.1.0.dylib */; };
+		CAAB018D1D61F16800F431A5 /* libopencv_objdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017C1D61F16800F431A5 /* libopencv_objdetect.3.1.0.dylib */; };
+		CAAB018E1D61F16800F431A5 /* libopencv_ts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017D1D61F16800F431A5 /* libopencv_ts.a */; };
+		CAAB018F1D61F16800F431A5 /* libopencv_superres.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017E1D61F16800F431A5 /* libopencv_superres.3.1.0.dylib */; };
+		CAAB01901D61F16800F431A5 /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB017F1D61F16800F431A5 /* libopencv_highgui.3.1.0.dylib */; };
+		CAAB01911D61F16800F431A5 /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01801D61F16800F431A5 /* libopencv_videoio.3.1.0.dylib */; };
+		CAAB01921D61F16800F431A5 /* libopencv_shape.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01811D61F16800F431A5 /* libopencv_shape.3.1.0.dylib */; };
+		CAAB01931D61F16800F431A5 /* libopencv_photo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01821D61F16800F431A5 /* libopencv_photo.3.1.0.dylib */; };
+		CAAB01941D61F16800F431A5 /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01831D61F16800F431A5 /* libopencv_imgcodecs.3.1.0.dylib */; };
+		CAAB01951D61F16800F431A5 /* libopencv_video.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01841D61F16800F431A5 /* libopencv_video.3.1.0.dylib */; };
+		CAAB01961D61F16800F431A5 /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01851D61F16800F431A5 /* libopencv_imgproc.3.1.0.dylib */; };
+		CAAB01971D61F16800F431A5 /* libopencv_ml.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01861D61F16800F431A5 /* libopencv_ml.3.1.0.dylib */; };
+		CAAB01981D61F16800F431A5 /* libopencv_flann.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01871D61F16800F431A5 /* libopencv_flann.3.1.0.dylib */; };
+		CAAB01991D61F16800F431A5 /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAB01881D61F16800F431A5 /* libopencv_core.3.1.0.dylib */; };
+		CAF6B70F1D65B2A200586F08 /* libOpenNI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF6B70E1D65B2A200586F08 /* libOpenNI.dylib */; };
+		CAF6B7111D65B5B200586F08 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAF6B7101D65B5B200586F08 /* Server.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAAB015E1D61EF5D00F431A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA8ECF6A1E7144D100445244 /* gazeapi_interfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gazeapi_interfaces.h; path = "../../../../Documents/tet-cpp-client-master 2/include/gazeapi_interfaces.h"; sourceTree = "<group>"; };
+		CA8ECF6B1E7144D100445244 /* gazeapi_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gazeapi_types.h; path = "../../../../Documents/tet-cpp-client-master 2/include/gazeapi_types.h"; sourceTree = "<group>"; };
+		CA8ECF6C1E7144D100445244 /* gazeapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gazeapi.h; path = "../../../../Documents/tet-cpp-client-master 2/include/gazeapi.h"; sourceTree = "<group>"; };
+		CA8ECF6D1E7144E900445244 /* gazeapi_observable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = gazeapi_observable.hpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi_observable.hpp"; sourceTree = "<group>"; };
+		CA8ECF6E1E7144E900445244 /* gazeapi_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gazeapi_parser.cpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi_parser.cpp"; sourceTree = "<group>"; };
+		CA8ECF6F1E7144E900445244 /* gazeapi_parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = gazeapi_parser.hpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi_parser.hpp"; sourceTree = "<group>"; };
+		CA8ECF701E7144E900445244 /* gazeapi_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gazeapi_socket.cpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi_socket.cpp"; sourceTree = "<group>"; };
+		CA8ECF711E7144E900445244 /* gazeapi_socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = gazeapi_socket.hpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi_socket.hpp"; sourceTree = "<group>"; };
+		CA8ECF721E7144E900445244 /* gazeapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gazeapi.cpp; path = "../../../../Documents/tet-cpp-client-master 2/src/gazeapi.cpp"; sourceTree = "<group>"; };
+		CA8ECF761E71458F00445244 /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.63.0/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		CA8ECF771E71458F00445244 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.63.0/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
+		CAAB01601D61EF5D00F431A5 /* udp-image-streaming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "udp-image-streaming"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAAB016B1D61EFCB00F431A5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = SOURCE_ROOT; };
+		CAAB016C1D61EFCB00F431A5 /* PracticalSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PracticalSocket.cpp; sourceTree = SOURCE_ROOT; };
+		CAAB016D1D61EFCB00F431A5 /* PracticalSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticalSocket.h; sourceTree = SOURCE_ROOT; };
+		CAAB01781D61F16800F431A5 /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01791D61F16800F431A5 /* libopencv_stitching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_stitching.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB017A1D61F16800F431A5 /* libopencv_calib3d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_calib3d.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB017B1D61F16800F431A5 /* libopencv_features2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_features2d.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB017C1D61F16800F431A5 /* libopencv_objdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_objdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB017D1D61F16800F431A5 /* libopencv_ts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_ts.a; path = ../../../../../usr/local/lib/libopencv_ts.a; sourceTree = "<group>"; };
+		CAAB017E1D61F16800F431A5 /* libopencv_superres.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_superres.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB017F1D61F16800F431A5 /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01801D61F16800F431A5 /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01811D61F16800F431A5 /* libopencv_shape.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_shape.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_shape.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01821D61F16800F431A5 /* libopencv_photo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_photo.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01831D61F16800F431A5 /* libopencv_imgcodecs.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_imgcodecs.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01841D61F16800F431A5 /* libopencv_video.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_video.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01851D61F16800F431A5 /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01861D61F16800F431A5 /* libopencv_ml.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_ml.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01871D61F16800F431A5 /* libopencv_flann.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_flann.3.1.0.dylib; sourceTree = "<group>"; };
+		CAAB01881D61F16800F431A5 /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../../../../usr/local/lib/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		CAF6B7091D65B16800586F08 /* MyGaze.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyGaze.hpp; sourceTree = "<group>"; };
+		CAF6B70E1D65B2A200586F08 /* libOpenNI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOpenNI.dylib; path = "../../../kinect/OpenNI-Bin-Dev-MacOSX-v1.5.7.10/Lib/libOpenNI.dylib"; sourceTree = "<group>"; };
+		CAF6B7101D65B5B200586F08 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAAB015D1D61EF5D00F431A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAAB018C1D61F16800F431A5 /* libopencv_features2d.3.1.0.dylib in Frameworks */,
+				CAAB018B1D61F16800F431A5 /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
+				CAAB01991D61F16800F431A5 /* libopencv_core.3.1.0.dylib in Frameworks */,
+				CAAB018D1D61F16800F431A5 /* libopencv_objdetect.3.1.0.dylib in Frameworks */,
+				CAAB01901D61F16800F431A5 /* libopencv_highgui.3.1.0.dylib in Frameworks */,
+				CA8ECF781E71458F00445244 /* libboost_system-mt.dylib in Frameworks */,
+				CA8ECF791E71458F00445244 /* libboost_thread-mt.dylib in Frameworks */,
+				CAAB01891D61F16800F431A5 /* libopencv_videostab.3.1.0.dylib in Frameworks */,
+				CAAB01921D61F16800F431A5 /* libopencv_shape.3.1.0.dylib in Frameworks */,
+				CAAB01941D61F16800F431A5 /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */,
+				CAAB01911D61F16800F431A5 /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				CAAB01931D61F16800F431A5 /* libopencv_photo.3.1.0.dylib in Frameworks */,
+				CAAB018F1D61F16800F431A5 /* libopencv_superres.3.1.0.dylib in Frameworks */,
+				CAAB018A1D61F16800F431A5 /* libopencv_stitching.3.1.0.dylib in Frameworks */,
+				CAF6B70F1D65B2A200586F08 /* libOpenNI.dylib in Frameworks */,
+				CAAB01981D61F16800F431A5 /* libopencv_flann.3.1.0.dylib in Frameworks */,
+				CAAB01961D61F16800F431A5 /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+				CAAB018E1D61F16800F431A5 /* libopencv_ts.a in Frameworks */,
+				CAAB01951D61F16800F431A5 /* libopencv_video.3.1.0.dylib in Frameworks */,
+				CAAB01971D61F16800F431A5 /* libopencv_ml.3.1.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAAB01571D61EF5D00F431A5 = {
+			isa = PBXGroup;
+			children = (
+				CAAB01781D61F16800F431A5 /* libopencv_videostab.3.1.0.dylib */,
+				CAAB01791D61F16800F431A5 /* libopencv_stitching.3.1.0.dylib */,
+				CAAB017A1D61F16800F431A5 /* libopencv_calib3d.3.1.0.dylib */,
+				CAAB017B1D61F16800F431A5 /* libopencv_features2d.3.1.0.dylib */,
+				CAAB017C1D61F16800F431A5 /* libopencv_objdetect.3.1.0.dylib */,
+				CAAB017D1D61F16800F431A5 /* libopencv_ts.a */,
+				CAAB017E1D61F16800F431A5 /* libopencv_superres.3.1.0.dylib */,
+				CAAB017F1D61F16800F431A5 /* libopencv_highgui.3.1.0.dylib */,
+				CAAB01801D61F16800F431A5 /* libopencv_videoio.3.1.0.dylib */,
+				CAAB01811D61F16800F431A5 /* libopencv_shape.3.1.0.dylib */,
+				CAAB01821D61F16800F431A5 /* libopencv_photo.3.1.0.dylib */,
+				CAAB01831D61F16800F431A5 /* libopencv_imgcodecs.3.1.0.dylib */,
+				CAAB01841D61F16800F431A5 /* libopencv_video.3.1.0.dylib */,
+				CAAB01851D61F16800F431A5 /* libopencv_imgproc.3.1.0.dylib */,
+				CAAB01861D61F16800F431A5 /* libopencv_ml.3.1.0.dylib */,
+				CAAB01871D61F16800F431A5 /* libopencv_flann.3.1.0.dylib */,
+				CAAB01881D61F16800F431A5 /* libopencv_core.3.1.0.dylib */,
+				CA8ECF761E71458F00445244 /* libboost_system-mt.dylib */,
+				CA8ECF771E71458F00445244 /* libboost_thread-mt.dylib */,
+				CAF6B70E1D65B2A200586F08 /* libOpenNI.dylib */,
+				CAAB01621D61EF5D00F431A5 /* udp-image-streaming */,
+				CAAB01611D61EF5D00F431A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAAB01611D61EF5D00F431A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB01601D61EF5D00F431A5 /* udp-image-streaming */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAAB01621D61EF5D00F431A5 /* udp-image-streaming */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB016B1D61EFCB00F431A5 /* config.h */,
+				CAAB016C1D61EFCB00F431A5 /* PracticalSocket.cpp */,
+				CAAB016D1D61EFCB00F431A5 /* PracticalSocket.h */,
+				CA8ECF6A1E7144D100445244 /* gazeapi_interfaces.h */,
+				CA8ECF6B1E7144D100445244 /* gazeapi_types.h */,
+				CA8ECF6C1E7144D100445244 /* gazeapi.h */,
+				CA8ECF6D1E7144E900445244 /* gazeapi_observable.hpp */,
+				CA8ECF6E1E7144E900445244 /* gazeapi_parser.cpp */,
+				CA8ECF6F1E7144E900445244 /* gazeapi_parser.hpp */,
+				CA8ECF701E7144E900445244 /* gazeapi_socket.cpp */,
+				CA8ECF711E7144E900445244 /* gazeapi_socket.hpp */,
+				CA8ECF721E7144E900445244 /* gazeapi.cpp */,
+				CAF6B7091D65B16800586F08 /* MyGaze.hpp */,
+				CAF6B7101D65B5B200586F08 /* Server.cpp */,
+			);
+			path = "udp-image-streaming";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAAB015F1D61EF5D00F431A5 /* udp-image-streaming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAAB01671D61EF5D00F431A5 /* Build configuration list for PBXNativeTarget "udp-image-streaming" */;
+			buildPhases = (
+				CAAB015C1D61EF5D00F431A5 /* Sources */,
+				CAAB015D1D61EF5D00F431A5 /* Frameworks */,
+				CAAB015E1D61EF5D00F431A5 /* CopyFiles */,
+				CAAB019B1D61F2C800F431A5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "udp-image-streaming";
+			productName = "udp-image-streaming";
+			productReference = CAAB01601D61EF5D00F431A5 /* udp-image-streaming */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAAB01581D61EF5D00F431A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SHO;
+				TargetAttributes = {
+					CAAB015F1D61EF5D00F431A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CAAB015B1D61EF5D00F431A5 /* Build configuration list for PBXProject "udp-image-streaming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CAAB01571D61EF5D00F431A5;
+			productRefGroup = CAAB01611D61EF5D00F431A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAAB015F1D61EF5D00F431A5 /* udp-image-streaming */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAAB019B1D61F2C800F431A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -a $BUILT_PRODUCTS_DIR/ $SRCROOT/bin/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAAB015C1D61EF5D00F431A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8ECF731E7144E900445244 /* gazeapi_parser.cpp in Sources */,
+				CAAB016F1D61EFCB00F431A5 /* PracticalSocket.cpp in Sources */,
+				CA8ECF751E7144E900445244 /* gazeapi.cpp in Sources */,
+				CA8ECF741E7144E900445244 /* gazeapi_socket.cpp in Sources */,
+				CAF6B7111D65B5B200586F08 /* Server.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAAB01651D61EF5D00F431A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CAAB01661D61EF5D00F431A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CAAB01681D61EF5D00F431A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/ni,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/usr/local/Cellar/boost/1.63.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAAB01691D61EF5D00F431A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/ni,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/usr/local/Cellar/boost/1.63.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAAB015B1D61EF5D00F431A5 /* Build configuration list for PBXProject "udp-image-streaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAAB01651D61EF5D00F431A5 /* Debug */,
+				CAAB01661D61EF5D00F431A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAAB01671D61EF5D00F431A5 /* Build configuration list for PBXNativeTarget "udp-image-streaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAAB01681D61EF5D00F431A5 /* Debug */,
+				CAAB01691D61EF5D00F431A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAAB01581D61EF5D00F431A5 /* Project object */;
+}

@@ -1,0 +1,4 @@
+/Users/sho/udp-image-streaming/CMakeFiles/edit_cache.dir
+/Users/sho/udp-image-streaming/CMakeFiles/rebuild_cache.dir
+/Users/sho/udp-image-streaming/CMakeFiles/client.dir
+/Users/sho/udp-image-streaming/CMakeFiles/server.dir

@@ -22,14 +22,78 @@
 #include <iostream>               // For cout and cerr
 #include <cstdlib>                // For atoi()
 
-using namespace std;
 
 #include "opencv2/opencv.hpp"
-using namespace cv;
+#include "opencv/cv.hpp"
+#include "opencv2/opencv.hpp"
+#include "opencv2/core/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "MyGaze.hpp"
+#include <XnCppWrapper.h>
+
 #include "config.h"
+
+using namespace cv;
+using namespace std;
+using namespace xn;
+
+float gaze_x[1];
+float gaze_y[1];
+
+void EyeData(float x, float y) {
+    
+    gaze_x[0] = x;          gaze_y[0] = y;
+
+}
+
+
+MyGaze::MyGaze() {
+    // Connect to the server in push mode on the default TCP port (6555)
+    if( m_api.connect( true ) ) {
+        // Enable GazeData notifications
+        m_api.add_listener( *this );
+    }
+}
+
+
+/*MyGaze::MyGaze()
+ : m_api( 0 ) // verbose_level 0 (disabled)
+ {
+ // Connect to the server on the default TCP port (6555)
+ if( m_api.connect(true) )
+ {
+ // Enable GazeData notifications
+ m_api.add_listener( *this );
+ }
+ }*/
+
+
+MyGaze::~MyGaze() {
+    m_api.remove_listener( *this );
+    m_api.disconnect();
+}
+
+
+void MyGaze::on_gaze_data( gtl::GazeData const & gaze_data ) {
+    if( gaze_data.state & gtl::GazeData::GD_STATE_TRACKING_GAZE ) {
+        gtl::Point2D const & smoothedCoordinates = gaze_data.avg;
+        
+        // Move GUI point, do hit-testing, log coordinates, etc.
+        // std::cout << "x = " << smoothedCoordinates.x << " y = " << smoothedCoordinates.y << std::endl;
+        EyeData(smoothedCoordinates.x, smoothedCoordinates.y);
+    }
+}
 
 
 int main(int argc, char * argv[]) {
+    
+    int x = 0; int y = 0;
+    XnDepthPixel RealDepth = 0;
+    
+    MyGaze *gaze;
+    gaze = new MyGaze();
+    
     if ((argc < 3) || (argc > 3)) { // Test for correct number of arguments
         cerr << "Usage: " << argv[0] << " <Server> <Server Port>\n";
         exit(1);
@@ -53,6 +117,9 @@ int main(int argc, char * argv[]) {
 
         clock_t last_cycle = clock();
         while (1) {
+            
+            x = gaze_x[0];  y = gaze_y[0];
+            
             cap >> frame;
             if(frame.size().width==0)continue;//simple integrity check; skip erroneous data...
             resize(frame, send, Size(FRAME_WIDTH, FRAME_HEIGHT), 0, 0, INTER_LINEAR);
@@ -79,6 +146,9 @@ int main(int argc, char * argv[]) {
 
             cout << next_cycle - last_cycle;
             last_cycle = next_cycle;
+            
+            // circle(imageMapShow, cv::Point(x, y), 10, cv::Scalar(0,0,200), 3, 4);
+            
         }
         // Destructor closes the socket
 
